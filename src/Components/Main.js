@@ -5,7 +5,7 @@ export function Main() {
   return (
     <div className="App">
       <header className="appHeader">
-        <div>로고/</div>
+        <div>비던열자</div>
         <div>조합정보/</div>
         <Link to="writing">
           <div>글쓰기/</div>
@@ -15,12 +15,12 @@ export function Main() {
           <div>설정</div>
         </Link>
       </header>
-      <body className="appBody">
+      <div className="appBody">
         <div>
           <header className="contentsHeader">필터링 및 정렬</header>
-          <body className="contents">내용</body>
+          <div className="contents">내용</div>
         </div>
-      </body>
+      </div>
       <footer>만든이</footer>
     </div>
   );
