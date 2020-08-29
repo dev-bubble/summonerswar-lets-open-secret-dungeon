@@ -9,31 +9,8 @@ export function Main() {
     new HeaderInfo("설정", "/settings", 2, false),
   ];
   return (
-    <div className="App">
-      <header className="appHeader">
-        <div>로고/</div>
-
-import { Link } from "react-router-dom";
-
-export function Main() {
-  return (
-    <div className="App">
-      <header className="appHeader">
-        <div>비던열자</div>
-        <div>조합정보/</div>
-        <Link to="writing">
-          <div>글쓰기/</div>
-        </Link>
-        <div>로그인/</div>
-        <Link to="settings">
-          <div>설정</div>
-        </Link>
-      </header>
-      <body className="appBody">
-        <div>
-          <header className="contentsHeader">필터링 및 정렬</header>
-          <body className="contents">내용</body>
-        </div>
+    <>
+      <div className="App">
         <Header info={MainHeaderInfos} />
         <div className="appBody">
           <div className="notice">
@@ -41,15 +18,9 @@ export function Main() {
             밝힙니다.
           </div>
         </div>
-      </body>
-      <div className="appBody">
-        <div>
-          <header className="contentsHeader">필터링 및 정렬</header>
-          <div className="contents">내용</div>
-        </div>
+        <footer>만든이</footer>
       </div>
-      <footer>만든이</footer>
-    </div>
+    </>
   );
 }
 
