@@ -19,7 +19,7 @@ export function SignIn() {
   ];
   return (
     <div className="App">
-      <Header info={WritingHeaderInfos} />
+      <Header info={SignInHeaderInfos} />
       <header className="settingHeader">
         <div>로그인</div>
       </header>

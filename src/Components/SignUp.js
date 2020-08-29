@@ -19,7 +19,7 @@ export function SignUp() {
   ];
   return (
     <div className="App">
-      <Header info={WritingHeaderInfos} />
+      <Header info={SignUpHeaderInfos} />
       <header className="settingHeader">
         <div>회원 가입</div>
       </header>
