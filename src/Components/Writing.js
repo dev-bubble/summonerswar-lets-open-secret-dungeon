@@ -5,9 +5,19 @@ import { SelectSD } from "./Common/SelectSD";
 
 export function Writing() {
   const WritingHeaderInfos = [
-    new HeaderInfo("글작성", "/writing", 3, true),
-    new HeaderInfo("목록", "/", 2, false),
-    // new HeaderInfo("로그인", "/signin", 3, false),
+    new HeaderInfo({
+      name: "글작성",
+      path: "/writing",
+      letters: 3,
+      active: true,
+    }),
+    new HeaderInfo({ name: "목록", path: "/", letters: 2, active: false }),
+    new HeaderInfo({
+      name: "로그인",
+      path: "/signin",
+      letters: 3,
+      active: false,
+    }),
   ];
   return (
     <div className="App">

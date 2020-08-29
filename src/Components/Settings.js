@@ -4,10 +4,25 @@ import { Link } from "react-router-dom";
 
 export function Setting() {
   const SettingHeaderInfos = [
-    new HeaderInfo("설정", "/settings", 2, true),
-    new HeaderInfo("목록", "/", 2, false),
-    // new HeaderInfo("회원 가입", "/signup", 4, false),
-    // new HeaderInfo("로그인", "/signin", 3, false),
+    new HeaderInfo({
+      name: "설정",
+      path: "/settings",
+      letters: 2,
+      active: true,
+    }),
+    new HeaderInfo({ name: "목록", path: "/", letters: 2, active: false }),
+    new HeaderInfo({
+      name: "회원 가입",
+      path: "/writing",
+      letters: 4,
+      active: false,
+    }),
+    new HeaderInfo({
+      name: "로그인",
+      path: "/signin",
+      letters: 3,
+      active: false,
+    }),
   ];
   return (
     <div className="App">

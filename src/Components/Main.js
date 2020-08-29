@@ -3,10 +3,25 @@ import { Header, HeaderInfo } from "./Common/Header";
 
 export function Main() {
   const MainHeaderInfos = [
-    new HeaderInfo("목록", "/", 2, true),
-    // new HeaderInfo("조합 정보", "/combination", 4, false),
-    new HeaderInfo("글작성", "/writing", 3, false),
-    new HeaderInfo("설정", "/settings", 2, false),
+    new HeaderInfo({ name: "목록", path: "/", letters: 2, active: true }),
+    new HeaderInfo({
+      name: "글작성",
+      path: "/writing",
+      letters: 3,
+      active: false,
+    }),
+    new HeaderInfo({
+      name: "조합 정보",
+      path: "/combination",
+      letters: 4,
+      active: false,
+    }),
+    new HeaderInfo({
+      name: "설정",
+      path: "/settings",
+      letters: 2,
+      active: false,
+    }),
   ];
   return (
     <>

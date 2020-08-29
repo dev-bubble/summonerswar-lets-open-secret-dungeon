@@ -3,10 +3,25 @@ import { Header, HeaderInfo } from "./Common/Header";
 
 export function Combination() {
   const WritingHeaderInfos = [
-    // new HeaderInfo("조합 정보", "/combination", 4, true),
-    new HeaderInfo("목록", "/", 2, false),
-    // new HeaderInfo("로그인", "/signin", 3, false),
-    new HeaderInfo("설정", "/settings", 2, false),
+    new HeaderInfo({
+      name: "조합 정보",
+      path: "/combination",
+      letters: 4,
+      active: false,
+    }),
+    new HeaderInfo({ name: "목록", path: "/", letters: 2, active: true }),
+    new HeaderInfo({
+      name: "로그인",
+      path: "/signin",
+      letters: 3,
+      active: false,
+    }),
+    new HeaderInfo({
+      name: "설정",
+      path: "/settings",
+      letters: 2,
+      active: false,
+    }),
   ];
   return (
     <div className="App">

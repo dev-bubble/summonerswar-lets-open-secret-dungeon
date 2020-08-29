@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export class HeaderInfo {
-  constructor(name, path, letters, active) {
+  constructor({ name, path, letters, active }) {
     this.name = name;
     this.path = path;
     this.letter = letters;

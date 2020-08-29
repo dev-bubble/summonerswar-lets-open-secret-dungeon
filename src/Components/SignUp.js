@@ -2,11 +2,20 @@ import React from "react";
 import { Header, HeaderInfo } from "./Common/Header";
 
 export function SignUp() {
-  const WritingHeaderInfos = [
-    // new HeaderInfo("회원 가입", "/writing", 4, true),
-    new HeaderInfo("목록", "/", 2, false),
-    // new HeaderInfo("로그인", "/signin", 3, false),
-    new HeaderInfo("설정", "/settings", 2, false),
+  const SignUpHeaderInfos = [
+    new HeaderInfo({
+      name: "회원 가입",
+      path: "/writing",
+      letters: 4,
+      active: true,
+    }),
+    new HeaderInfo({ name: "목록", path: "/", letters: 2, active: false }),
+    new HeaderInfo({
+      name: "로그인",
+      path: "/signin",
+      letters: 3,
+      active: false,
+    }),
   ];
   return (
     <div className="App">
