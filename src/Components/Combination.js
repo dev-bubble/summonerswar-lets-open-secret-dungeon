@@ -1,21 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Header, HeaderInfo } from "./Common/Header";
-import { SelectSD } from "./Common/SelectSD";
 
-export function Writing() {
+export function Combination() {
   const WritingHeaderInfos = [
     new HeaderInfo({
-      name: "글작성",
-      path: "/writing",
-      letters: 3,
-      active: true,
+      name: "조합 정보",
+      path: "/combination",
+      letters: 4,
+      active: false,
     }),
-    new HeaderInfo({ name: "목록", path: "/", letters: 2, active: false }),
+    new HeaderInfo({ name: "목록", path: "/", letters: 2, active: true }),
     new HeaderInfo({
       name: "로그인",
       path: "/signin",
       letters: 3,
+      active: false,
+    }),
+    new HeaderInfo({
+      name: "설정",
+      path: "/settings",
+      letters: 2,
       active: false,
     }),
   ];
@@ -23,16 +27,11 @@ export function Writing() {
     <div className="App">
       <Header info={WritingHeaderInfos} />
       <header className="settingHeader">
-        <div>글 작성</div>
+        <div>조합 정보</div>
       </header>
       <div className="settingBody">
         <div>
-          <SelectSD />
-          <div className="contents">
-            <Link to="/">
-              <div className="buttons">작성</div>
-            </Link>
-          </div>
+          <div className="contents">작성 내용</div>
         </div>
       </div>
       <footer>만든이</footer>
@@ -40,4 +39,4 @@ export function Writing() {
   );
 }
 
-export default Writing;
+export default Combination;
