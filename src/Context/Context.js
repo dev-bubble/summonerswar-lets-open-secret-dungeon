@@ -31,3 +31,6 @@ export const articleProvider = ({ children }) => {
     </articleContext.Provider>
   );
 };
+import React, { createContext } from "react";
+
+const Context = createContext();
